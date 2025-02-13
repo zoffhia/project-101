@@ -1,0 +1,565 @@
+body{
+    overflow: hidden;
+    background-color: rgb(32, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.hirono-figure{
+    top:1%;
+    left:0%;
+    right:0%;
+    width:100%;
+    height: 100%;
+}
+
+.hair{
+    position: absolute;
+    top:20%;
+    left: 30%;
+    z-index: 5;
+    width: 20vmax;
+    height: 21vmax;
+    clip-path: polygon(70.08% 58.59%, 73.48% 62.58%, 76.7% 64.95%, 80.68% 64.65%, 80.68% 58.7%, 84% 62.74%, 88.84% 66.55%, 94.43% 69.47%, 100% 29.29%, 91.88% 16.09%, 88% 13.34%, 92.14% 10.99%, 84.88% 7.84%, 80.92% 9.42%, 88.84% 6.25%, 70.71% 0%, 65.42% 1.37%, 65.31% 0%, 59.26% 0.81%, 44.27% 0.41%, 36.49% 0%, 34.39% 1.16%, 29.29% 0%, 14.43% 6.84%, 20.25% 7.06%, 14.73% 7.76%, 7.01% 20.49%, 0% 29.29%, 4.23% 70.35%, 10.3% 67.52%, 15% 62.74%, 19.15% 57.63%, 16.76% 64.53%, 21.15% 63.74%, 24.99% 61.47%, 29.29% 58.7%, 30.82% 65.32%, 35.39% 70.35%, 44.21% 74.84%, 45.93% 74.84%, 49.3% 64.65%, 47.83% 77.32%, 49.3% 77.49%, 59.47% 71.94%, 66.28% 66.46%);
+    background: linear-gradient(0deg, rgba(235,71,64,1) 25%, rgba(211,108,99,1) 100%);
+}
+
+.left-hair{
+    position:absolute;
+    z-index:1;
+    top:21%;
+    left:25%;
+    width:12vmax;
+    height:13vmax;
+    clip-path: polygon(71.25% 0%, 100% 0%, 100% 69.25%, 81.75% 100%, 82.25% 84.87%, 65.4% 100%, 60.21% 94.22%, 46.56% 100%, 56.75% 81.75%, 34.18% 99.83%, 38.83% 90.47%, 19.25% 100%, 22.78% 89.55%, 11.37% 100%, 11.37% 89.55%, 2.18% 91.86%, 4.63% 65.81%, 0% 69%, 4.63% 50.95%, 0% 59.75%, 2.18% 36.94%, 18.04% 24.01%, 40.89% 9.6%);
+    background: linear-gradient(56deg, rgba(235,71,64,1) 10%, rgba(211,108,99,1) 100%);
+}
+.right-hair{
+    position:absolute;
+    z-index: 1;
+    top:21%;
+    right: 23%;
+    width: 12vmax;
+    height: 13vmax;
+    clip-path: polygon(0% 0%, 36.75% 0%, 64% 18.25%, 93.06% 31.78%, 77.89% 28.32%, 87.65% 39.62%, 100% 69%, 91.56% 59.79%, 95.76% 81.43%, 86.18% 73.28%, 93.06% 85.76%, 95.76% 99.75%, 76.41% 94.65%, 68.72% 82.88%, 75.32% 100%, 68.72% 94%, 69.09% 100%, 47.88% 90.71%, 52.78% 100%, 21.25% 85.43%, 26.39% 100%, 7.25% 94%, 0% 100%);
+    background: linear-gradient(309deg, rgba(235,71,64,1) 10%, rgba(211,108,99,1) 100%);
+}
+.back-hair{
+    position:absolute;
+    top: 29%;
+    left:30%;
+    width:20vmax;
+    height:15vmax;
+    clip-path: polygon(4.98% 0%, 95.02% 0%, 99.89% 55.32%, 99.32% 65.22%, 92.92% 62.25%, 85.95% 69.18%, 79.35% 77.39%, 76.62% 76.16%, 72.01% 83.04%, 69.8% 81.29%, 64.67% 88.7%, 62.74% 83.82%, 50% 100%, 37.75% 83.44%, 38.69% 88.7%, 31.52% 82.74%, 30.85% 87.22%, 23.77% 77.71%, 21.95% 79.68%, 10.98% 67.59%, 6.73% 61.78%, 0% 66.57%, 0% 55.5%);
+    background-color: #eb4747;
+}
+
+.head{
+    position:absolute;
+    z-index:1;
+    left:19%;
+    top:25%;
+    width: 30vmax;
+    height: 20vmax;
+    clip-path: polygon(20.23% 29.29%, 79.77% 29.29%, 77.25% 59.75%, 75% 70.25%, 71.02% 76.68%, 60.95% 81%, 50% 81%, 39.05% 81%, 28.98% 76.68%, 25% 70.25%, 22.5% 59.75%);
+    background: linear-gradient(0deg, rgba(255,214,154,1) 25%, rgba(255,130,89,1) 75%);
+}
+.left-ear{
+    position:absolute;
+    top:32%;
+    left:27.5%;
+    width:5vmax;
+    height:5vmax;
+    clip-path: polygon(70.71% 100%, 70.71% 70.71%, 70.71% 29.29%, 70.71% 0%, 29.29% 0%, 0% 29.29%, 0% 70.71%, 29.29% 100%);
+    background: linear-gradient(90deg, rgba(255,214,154,1) 15%, rgba(255,130,89,1) 100%);
+}
+.right-ear{
+    position:absolute;
+    top:32%;
+    right:27.5%;
+    width:5vmax;
+    height:5vmax;
+    clip-path: polygon(70.71% 100%, 100% 70.71%, 100% 29.29%, 70.71% 0%, 29.29% 0%, 29.29% 29.29%, 29.29% 70.71%, 29.29% 100%);
+    background: linear-gradient(90deg, rgba(255,130,89,1) 15%, rgba(255,214,154,1) 100%);
+}
+.left-eye{
+    position:absolute;
+    z-index: 2;
+    top:33%;
+    left:34.5%;
+    width:5vmax;
+    height: 5vmax;
+    clip-path: polygon(74.71% 82.09%, 88.57% 76.87%, 98.92% 66.29%, 100% 60.25%, 88.57% 42.13%, 69.1% 33.18%, 37.31% 29.29%, 5.37% 31.76%, 0% 35%, 2.08% 60.25%, 14.77% 71.17%, 34.46% 82.09%);
+    background-color: #ffe8d8;
+}
+.right-eye{
+    position:absolute;
+    z-index: 2;
+    top:33%;
+    right: 35%;
+    width: 5vmax;
+    height:5vmax;
+    clip-path: polygon(60.27% 78.74%, 84.62% 73.53%, 93.74% 66.76%, 98.92% 56.65%, 100% 35%, 95.07% 31.76%, 74.71% 29.29%, 44.06% 31.76%, 14.44% 40.01%, 0.95% 51.2%, 2.08% 60.25%, 14.77% 71.17%, 33.71% 78.74%);
+    background-color: #ffe8d8;
+}
+.inner-right{
+    position:absolute;
+    z-index:2;
+    top:32.8%;
+    right:35%;
+    width:5vmax;
+    height:5.5vmax;
+    clip-path: polygon(62.69% 70.52%, 74.71% 64.08%, 80.03% 51.34%, 80.03% 38.23%, 74.71% 29.29%, 44.06% 31.76%, 14.44% 40.01%, 12.6% 45.32%, 14.44% 59.71%, 24.11% 70.52%, 38.03% 73.53%, 49.58% 74.3%);
+    background-color: #ff0000;
+}
+.inner-left{
+    position:absolute;
+    z-index:2;
+    top: 32.7%;
+    left:34.5%;
+    width:5vmax;
+    height: 6vmax;
+    clip-path: polygon(52.47% 71.49%, 73.14% 68.42%, 84.22% 60.25%, 88.57% 50.25%, 88.57% 37.63%, 69.1% 33.18%, 37.31% 29.29%, 19.25% 29.29%, 15.98% 33.18%, 13.29% 45.52%, 19.25% 56.65%, 32.27% 68.42%);
+    background-color: #ff0000;
+}
+.left-highlight{
+    position:absolute;
+    z-index:3;
+    top:35.5%;
+    left:35.5%;
+    width:1.5vmax;
+    height:1vmax;
+    clip-path: polygon(50% 1.25%, 27.75% 6.33%, 9.9% 20.56%, 0% 41.13%, 0% 63.95%, 4.16% 74.53%, 14.79% 89.92%, 31.29% 98.75%, 50% 98.75%, 68.65% 98.75%, 85.1% 89.95%, 96.5% 75.18%, 100% 63.95%, 100% 41.13%, 90.1% 20.56%, 72.25% 6.33%);
+    background-color: #ffffffce;
+}
+
+.right-highlight{
+    position:absolute;
+    z-index:3;
+    top:35.5%;
+    right:40.5%;
+    width:1.5vmax;
+    height:1vmax;
+    clip-path: polygon(50% 1.25%, 27.75% 6.33%, 9.9% 20.56%, 0% 41.13%, 0% 63.95%, 4.16% 74.53%, 14.79% 89.92%, 31.29% 98.75%, 50% 98.75%, 68.65% 98.75%, 85.1% 89.95%, 96.5% 75.18%, 100% 63.95%, 100% 41.13%, 90.1% 20.56%, 72.25% 6.33%);
+    background-color: #ffffffce;
+}
+.outer-left{
+    position:absolute;
+    animation: blink 15s infinite ease-in-out normal;
+    z-index:3;
+    top: 32.5%;
+    left:34%;
+    width:5.5vmax;
+    height:5vmax;
+    transform: rotate(5deg);
+    clip-path: polygon(71.18% 40.96%, 100% 40.96%, 100% 29.29%, 88.88% 11.13%, 70.71% 0%, 29.29% 0%, 11.13% 11.13%, 0% 29.29%, 0% 40.96%, 29.29% 40.96%);
+    background: linear-gradient(0deg, rgba(255,214,154,1) 25%, rgba(255,130,89,1) 100%);
+}
+
+.outer-right{
+    position:absolute;
+    animation: blink 15s infinite ease-in-out normal;
+    z-index:3;
+    top: 32.5%;
+    right:35%;
+    width:5.5vmax;
+    height:5vmax;
+    transform: rotate(-5deg);
+    clip-path: polygon(71.18% 40.96%, 100% 40.96%, 100% 29.29%, 88.88% 11.13%, 70.71% 0%, 29.29% 0%, 11.13% 11.13%, 0% 29.29%, 0% 40.96%, 29.29% 40.96%);
+    background: linear-gradient(0deg, rgba(255,214,154,1) 25%, rgba(255,130,89,1) 100%);
+}
+
+.mouth{
+    position:absolute;
+    z-index: 1;
+    top:37.5%;
+    left:47.5%;
+    width:3vmax;
+    height:2vmax;
+    clip-path: polygon(70.71% 52.46%, 85.36% 52.75%, 100% 58.46%, 94.01% 51.04%, 85.36% 47.04%, 70.71% 47.04%, 16.29% 47.04%, 4.5% 52.41%, 0% 58.46%, 16.29% 52.46%);
+    background-color: #000000;
+}
+
+.nose{
+    position: absolute;
+    z-index: 1;
+    top:36%;
+    left:47.5%;
+    width:3vmax;
+    height:2vmax;
+    clip-path: polygon(57.08% 44.2%, 64.56% 47.7%, 76.56% 54.62%, 73.03% 49.7%, 69.14% 45.07%, 59.14% 40.13%, 48.14% 38.24%, 42.23% 38.24%, 36.42% 39.27%, 32.57% 40.13%, 25.8% 44.2%, 19.27% 50.43%, 15.22% 58.49%, 21.64% 53.41%, 26.32% 49.27%, 31.42% 45.65%, 37.61% 44.76%, 43.86% 44.58%, 50.45% 43.76%);
+    background-color: #000000;
+}
+
+.blush{
+    position:absolute;
+    z-index: 1;
+    top:36%;
+    left:47.5%;
+    width:3vmax;
+    height: 4vmax;
+    border-radius: 50%;
+    background-color: rgb(255, 63, 63);
+    filter: blur(20px); 
+}
+
+.body{
+    position:absolute;
+    z-index:2;
+    top:39%;
+    left:20.5%;
+    width:30vmax;
+    height:30vmax;
+    clip-path: polygon(24.8% 33.37%, 24.8% 13.17%, 28% 7.5%, 49.37% 7.5%, 70.74% 7.5%, 73.25% 13.17%, 73.25% 33.37%, 72.96% 44.52%, 49.37% 44.52%, 24.8% 44.52%);
+    background: linear-gradient(320deg, rgb(255, 151, 116) 0.5%, rgba(255,214,154,1) 100%);
+}
+
+.shirt{
+    position:absolute;
+    z-index:3;
+    top:39%;
+    left:20.5%;
+    width:30vmax;
+    height:30vmax;
+    clip-path: polygon(24.8% 33.37%, 23.91% 23.27%, 24.8% 13.17%, 24.8% 9.43%, 28% 7.5%, 33.96% 7.5%, 38.19% 11.52%, 49.03% 13.17%, 61.31% 11.67%, 65.1% 7.5%, 70.74% 7.5%, 73.51% 9.66%, 73.25% 13.17%, 73.51% 23.27%, 73.25% 33.37%, 75.93% 41.87%, 72.96% 44.52%, 64% 45.35%, 49.37% 44.52%, 28% 45.35%, 22.08% 43.82%, 22.57% 38.37%);
+    background: linear-gradient(180deg, rgba(88,104,136,1) 5%, rgba(91,132,214,1) 15%, rgba(206,215,233,1) 50%);
+}
+
+.legs{
+    position:absolute;
+    z-index:1;
+    top:35%;
+    left:10%;
+    width:40vmax;
+    height: 40vmax;
+    clip-path: polygon(33.22% 59.25%, 30.87% 43.42%, 30.87% 37.75%, 49.87% 37.75%, 67.41% 37.75%, 67.41% 43.42%, 64.97% 59.25%, 62.17% 68.15%, 52.84% 68.15%, 49.35% 52%, 45.09% 68.15%, 35.82% 68.15%);    
+    background: linear-gradient(356deg, rgba(206,215,233,1) 30%, rgba(137,152,181,1) 100%);    
+}
+.left-arm{
+    position:absolute;
+    top:37.5%;
+    left:17%;
+    width:13.5vmax;
+    height:18vmax;
+    transform: rotate(-45deg);
+    clip-path: polygon(5.25% 37.91%, 16.01% 33.36%, 31.5% 37.91%, 86.25% 37.91%, 94.32% 42.44%, 98.59% 50.64%, 94.32% 62.97%, 23.77% 55.06%, 16.94% 59.48%, 5.25% 59.48%, 0.75% 48.69%);
+    background: linear-gradient(248deg, rgba(255,151,116,1) 15%, rgba(255,206,154,1) 100%);
+    animation: leftWingMovement 15s infinite ease-in-out;
+}
+
+.right-arm{
+    position:absolute;
+    top:37.5%;
+    right:20%;
+    width:13vmax;
+    height:18vmax;
+    transform: rotate(45deg);
+    clip-path: polygon(8.63% 40.55%, 16.26% 36.15%, 33.42% 34.86%, 64.52% 34.86%, 84.22% 33.36%, 95.61% 34.86%, 99.96% 45.5%, 96.57% 59.48%, 84.22% 59.48%, 69.27% 52.23%, 28.46% 59.48%, 19.7% 59.48%, 5.24% 59.48%, 5.24% 48.69%);
+    background: linear-gradient(142deg, rgba(255,151,116,1) 15%, rgba(255,206,154,1) 100%);
+    animation: rightWingMovement 15s infinite ease-in-out;
+}
+.left-wrist{
+    position:absolute;
+    top: 44.7%;
+    left:20.5%;
+    width: 6vmax;
+    height:5vmax;
+    transform:rotate(-45deg);
+    clip-path: polygon(33.25% 10%, 67.25% 10%, 70.75% 17%, 70.75% 50%, 70.75% 83%, 67.25% 90%, 33.25% 90%, 29.5% 83%, 29.5% 50%, 29.5% 17%);
+    background-color: #c7d1e6;
+    animation: leftWingMovement 15s infinite ease-in-out;
+}
+
+.right-wrist{
+    position:absolute;
+    top:44.5%;
+    right:22%;
+    width: 6vmax;
+    height:5vmax;
+    transform:rotate(35deg);
+    clip-path: polygon(33.25% 10%, 67.25% 10%, 70.75% 17%, 70.75% 50%, 70.75% 83%, 67.25% 90%, 33.25% 90%, 29.5% 83%, 29.5% 50%, 29.5% 17%);
+    background-color: #c7d1e6;
+    animation: rightWingMovement 15s infinite ease-in-out;
+}
+.left-wing{
+    position:absolute;
+    z-index:-1;
+    top:32.5%;
+    left:3%;
+    width:30vmax;
+    height:30vmax;
+    transform: rotate(-35deg);
+    clip-path: polygon(49.75% 35.25%, 97.25% 35.25%, 97.25% 49.75%, 49.75% 70%, 43.81% 66.49%, 47.07% 63.71%, 37.88% 62.98%, 34.99% 59.2%, 26% 55.96%, 26% 52.63%, 20.24% 50.93%, 20.24% 48.41%, 14.24% 47.06%, 9.08% 43.73%, 14.24% 42.65%, 6.38% 41.98%, 2.25% 35.25%);   
+    background: linear-gradient(90deg, rgba(177,39,0,1) 10%, rgba(231,136,63,1) 50%);
+    animation: leftWingMovement 15s infinite ease-in-out;
+}
+
+.right-wing{
+    position:absolute;
+    z-index:-1;
+    top:34%;
+    right:2%;
+    width:30vmax;
+    height:27vmax;
+    transform:rotate(35deg);
+    clip-path: polygon(49.75% 35.25%, 97.25% 35.25%, 97.25% 39%, 89.22% 41.39%, 95.01% 41.8%, 85.27% 47.96%, 87.02% 50.73%, 81.95% 52.94%, 83.43% 56.32%, 69.11% 58.24%, 78.32% 58.72%, 74.68% 64.49%, 64.76% 62.23%, 72.68% 65%, 65.91% 66.76%, 60.17% 65.75%, 64.3% 68.47%, 60.25% 71.29%, 56.13% 71.29%, 51.21% 65.75%, 53.44% 71.29%, 41% 67.29%, 23.09% 61.1%, 9.08% 43.73%, 2.25% 35.25%);
+    background: linear-gradient(267deg, rgba(177,39,0,1) 10%, rgba(231,136,63,1) 50%);
+    animation: rightWingMovement 15s infinite ease-in-out;
+}
+.left-foot{
+    position:absolute;
+    top:58.5%;
+    left:35.5%;
+    width:6vmax;
+    height:7vmax;
+    clip-path: polygon(13.51% 69.04%, 19.25% 53.35%, 29.58% 48.76%, 66.51% 48.76%, 78.26% 53.35%, 84% 69.04%, 84% 85.75%, 80.49% 92.72%, 19.25% 92.72%, 13.51% 85.75%);
+    background-color: rgba(255,214,154,1);
+}
+
+.right-foot{
+    position:absolute;
+    top:58.5%;
+    right:39.8%;
+    width:6vmax;
+    height:7vmax;
+    clip-path: polygon(13.51% 69.04%, 19.25% 53.35%, 29.58% 48.76%, 66.51% 48.76%, 78.26% 53.35%, 84% 69.04%, 84% 85.75%, 80.49% 92.72%, 19.25% 92.72%, 13.51% 85.75%);
+    background-color: rgba(255,214,154,1);
+}
+
+.envelope{
+    position:absolute;
+    z-index:5;
+    top:37.4%;
+    left:38%;
+    width: 12vmax;
+    height:9vmax;
+    clip-path: polygon(11.25% 21.25%, 91.25% 21.25%, 91.25% 81%, 11.25% 81%);
+    background-color:  #9cb3e5;
+    animation: shake 15s infinite ease-in-out;
+}
+
+.envelope-flap{
+    position:absolute;
+    z-index:5;
+    top:36%;
+    left: 38%;
+    width:12vmax;
+    height:13vmax;
+    clip-path: polygon(11.25% 21.25%, 91.25% 21.25%, 91.25% 32.5%, 51.25% 48%, 11.25% 32.5%);
+    background-color: #d0dfff;
+    animation: shake 15s infinite ease-in-out;
+}
+
+.heart{
+    position:absolute;
+    z-index:5;
+    top:40.5%;
+    left:47%;
+    width:3vmax;
+    height:2.7vmax;
+    clip-path: polygon(49.51% 26.6%, 54.82% 22.05%, 64.27% 17.44%, 73.24% 14.28%, 82% 18%, 90% 26%, 93% 36.91%, 90% 50%, 72.18% 73.75%, 50% 93.5%, 27.83% 73.75%, 10% 50%, 4.69% 38.45%, 7.25% 26%, 16.76% 15.94%, 25.83% 12.67%, 34.9% 15.94%, 44.2% 22.05%);
+    background-color: #db1d33;
+}
+
+.heart:hover{
+    transform: scale(1.5);
+}
+
+.strap{
+    position:absolute;
+    z-index:4;
+    top:42%;
+    left: 30%;
+    width:20vmax;
+    height:10vmax;
+    transform: rotate(-35deg);
+    clip-path: polygon(3.25% 40.5%, 95.5% 40.5%, 98.25% 44.85%, 98.25% 50%, 98.25% 55.15%, 95.5% 59.5%, 3.25% 59.5%, 1.5% 55.15%, 1.5% 50%, 1.5% 44.85%);
+    background-color: #1f6044;
+}
+
+.main-bag{
+    position:absolute;
+    animation: bag 15s ease-in-out infinite;
+    z-index:3;
+    top:50%;
+    left:24%;
+    width:10vmax;
+    height: 10vmax;
+    clip-path: polygon(35.5% 10%, 42.08% 4.75%, 50.5% 4.75%, 58.92% 4.75%, 65.5% 10%, 68.25% 80.42%, 65.5% 90%, 58.92% 95.26%, 50.5% 95.5%, 42.08% 95.26%, 35.5% 90%, 30.12% 80.42%, 30.12% 66.25%);
+    background-color: #114b32;
+}
+
+.stand{
+    position:absolute;
+    left: 25%;
+    top:64.5%;
+    width: 25vmax;
+    height: 100%;
+    /*clip-path: polygon(12% 57.75%, 28% 54.25%, 73.32% 54.25%, 91.25% 57.75%, 97.25% 65.33%, 97.25% 75%, 3.5% 75%, 3.5% 64.28%);*/
+    background-color: #6d3905;
+    border-top-left-radius: 5vmax;
+    border-top-right-radius: 5vmax;
+}
+
+@keyframes shake{
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+}
+
+@keyframes bag{
+    0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 0;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+@keyframes leftWingMovement{
+    0%{
+        transform: rotate(-35deg);
+    }
+    10%, 90%{
+        transform: rotate(-40deg);
+    }
+    20%, 80%{
+        transform: rotate(-35deg)
+    }
+    30%, 50%{
+        transform: rotate(-40deg);
+    }
+    70%{
+        transform: rotate(-45deg);
+    }
+    40%, 100%{
+        transform: rotate(-35deg);
+    }
+}
+
+@keyframes rightWingMovement{
+    0%{
+        transform: rotate(35deg);
+    }
+    10%, 90%{
+        transform: rotate(40deg);
+    }
+    20%, 80%{
+        transform: rotate(35deg)
+    }
+    30%, 50%{
+        transform: rotate(40deg);
+    }
+    70%{
+        transform: rotate(45deg);
+    }
+    40%, 100%{
+        transform: rotate(35deg);
+    }
+}
+
+@keyframes blink{
+    0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+    70%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*
+@media screen and (min-width:1024px){
+    .hirono-figure{
+        position: absolute;
+        width: 50%;
+        height:50%;
+    }
+
+    .head{
+        top:%;
+    }
+/*
+    .hair{
+        top:20%;
+        left: 30%;
+    }
+
+    .left-hair{
+        top:21%;
+        left:27%;
+    }
+    .right-hair{
+        top:21%;
+        right: 46%;
+    }
+    .back-hair{
+        top: 31%;
+        left:30%;
+    }
+    .head{
+        left:25%;
+        top:25%;
+    }
+    .body{
+        top:40.5%;
+        left:25%;
+    }
+    .shirt{
+        top:40.5%;
+        left:25%;
+    }
+    .left-ear{
+        top:32%;
+        left:27%;
+    }
+    .right-ear{
+        top:32%;
+        right:2%;
+    }
+}
